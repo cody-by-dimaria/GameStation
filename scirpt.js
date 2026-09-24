@@ -4,13 +4,13 @@ function cadastrar() {
     
     const escreverconsole = prompt("Digite o nome do Console")
      if(escreverconsole === null || escreverconsole.trim() === ""){
-        alert("O nome do console e O ano do console é obrigatório. Digite um NOME válido para continuar.")
+        alert("O nome do console é obrigatório. Digite um nome válido para continuar.")
         return
     }
 
     const marcaConsole = prompt ("Digite a marca do Console")
      if(marcaConsole === null || marcaConsole.trim() === ""){
-        alert("O nome da marca e O ano do console é obrigatório. Digite uma marca válida para continuar.")
+        alert("O nome da marca é obrigatório. Digite uma marca válida para continuar.")
         return
     }
 
