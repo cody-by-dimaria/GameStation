@@ -1,0 +1,68 @@
+body {
+    font-family: 'Titillium Web';
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.play, .xbox, .nintendo {
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Titillium Web';
+    text-align: center;
+    margin-top: -30px;
+    font-size: 60px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+}
+
+.pai {
+    box-shadow: 0 0 10px rgba(243, 240, 240, 0.2);
+    backdrop-filter: blur(10px);
+    width: 1089px;
+    height: 439px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.meio {
+    background-color: #363B52;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 247px;
+    height: 90px;
+    margin: 0 100px 0 100px;
+}
+
+.box {
+    color: white;
+    background-color: #363B52;
+    border-radius: 10px;
+    text-align: center;
+    width: 247px;
+    height: 90px;
+}
+
+button {
+    font-size: 20px;
+    border-radius: 10px;
+    width: 162px;
+    height: 30px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+    transform: scale(1.1);
+}
