@@ -1,58 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <title>gerenciador de videogame</title>
 </head>
 <body>
-
-    <div class="logos">
-        <img class="play" src="img/playstation.png" alt="Playstation">
-        <img class="nintendo" src="img/nintendo.png" alt="Nintendo" >
-        <img class="xbox" src="img/xbox.png" alt="Xbox">
-        <h1>Gerenciador de Videogame</h1>
-    </div>
-
+   
     <div class="pai">
-        <div class="box">
-            <p>Cadastra Videogame+</p>
-            <button onclick="cadastrar()">Clique aqui</button>
+        <div class="playstation">
+         PlayStation
         </div>
 
-        <div class="meio">
-            <p>Listar Videogames</p>
-            <button onclick="listar()">Clique aqui</button>
+        <div class="nintendo">
+            Nintendo
+        </div>
+        <div class="xbox">
+            Xbox
         </div>
 
-        <div class="box">
-            <p>Buscar por Videogames</p>
-            <button onclick="buscar()">Clique aqui</button>
-        </div>
-
-        <div class="box">
-            <p>Remover último Videogame</p>
-            <button onclick="deletar()">Clique aqui</button>
-        </div>
-
-        <div class="meio">
-            <p>deletar Videogame pelo ID</p>
-            <button onclick="remiverId()">Clique aqui</button>
-        </div>
-
-        <div class="box">
-            <p>Limpar tudo</p>
-            <button onclick="limparTudo()">Clique aqui</button>
-        </div>
-
-        <div class="box">
-            <p>Exibir total de Videogames</p>
-            <button onclick="exibirConsoles()">Clique aqui</button>
-        </div>
         
-    </div>
-    
+
+
+        <h1>Gerenciador de Videogames</h1>
+        <h2>Cadastre, busque e organize sua coleção</h2>
+       
+        <button onclick="cadastrar()">
+            <strong>
+            +<br>
+            </strong>
+            Cadastrar
+        </button>
+
+        <button onclick="listar()" class="bnt-listar">  📋 <br>
+
+         
+           Listar
+        </button>
+
+        <button onclick="buscar()" class="bnt-listar1">
+             🔍
+             <br>
+            Buscar
+        </button>
+
+        <button onclick="exibirConsoles()" class="bnt-listar2">  Nº
+        
+            <br>
+            Total
+        </button>
+        <br>
+        <br>
+        <hr>
+        <h3>Remover</h3>
+
+        <button onclick="deletar()" class="remover">
+            Remover <br>
+            Ultimo
+        </button>
+
+        <button onclick="removerId()" class="remover1">
+            # <br>
+            Por ID
+        </button>
+
+        <button onclick="limparTudo()" class="remover2">
+            🗑️<br>
+
+            Limpar tudo 
+        </button>
+        </div>
+        <script src="scirpt.js"></script>
 </body>
-<script src="scirpt.js"></script>
 </html>

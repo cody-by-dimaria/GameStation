@@ -53,21 +53,28 @@ function listar() {
 }
 
 function buscar() {
-    const consoleProucurado = prompt ("Digite o nome do console que deseja cadastrar")
 
-    const consoleEncontrado = consoles.find(videogame => videogame.nome == consoleProucurado)
-
-    if(consoleProucurado){
-        console.log("Console encontrado: " + consoleEncontrado.nome + " |" + " id: " + consoleEncontrado.id +  " |"  + " Marca: " + consoleEncontrado.marca + " |" + " Ano: " + consoleEncontrado.ano)
+     if(consoles <= 0 ){
+        alert("Nenhum item cadastrado. Adicione um item para continuar.")
     }
     else{
-        console.log("")
+
+        const consoleProucurado = prompt ("Digite o nome do console que deseja buscar")
+        
+        const consoleEncontrado = consoles.find(videogame => videogame.nome == consoleProucurado)
+
+        if(consoleProucurado){
+            alert("Console encontrado: " + consoleEncontrado.nome + " |" + " id: " + consoleEncontrado.id +  " |"  + " Marca: " + consoleEncontrado.marca + " |" + " Ano: " + consoleEncontrado.ano)
+        }
+        else{
+            console.log("")
+        }
     }
 }
 
 function deletar() {
     consoles.pop()
-    alert("Console não encontrado. Verifique o nome informado e tente novamente.")
+    alert("Removido com sucesso!.")
 }
 
 function removerId(){
